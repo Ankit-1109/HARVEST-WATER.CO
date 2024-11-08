@@ -1,0 +1,144 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+    background-image:url(Rainwater_Harvesting_2_1024x1024.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background:linear-gradient(to right,rgb(127, 207, 223),rgb(11, 101, 134),rgb(127, 207, 223));
+
+    color: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing:auto;
+    font: weight 500px;
+    font-style:normal;
+}
+header ul li{
+    margin: 4px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #3498db;
+}
+
+/* Methods Page */
+#methods-page {
+    padding: 2rem;
+    background: #ffffff;
+    max-width: 1000px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#methods-page h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* Method Card */
+.method-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.method-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.method-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.method-content h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.method-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .method-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .method-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+

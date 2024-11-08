@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image:url(image\ \(2\).jpg);
+    background-size: 100%,100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background:linear-gradient(to right,rgb(127, 207, 223),rgb(11, 101, 134),rgb(127, 207, 223));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    opacity:95%;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color:rgb(6, 1, 40);
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    color:rgb(6, 1, 40);
+}
+
+.login-container input {
+    padding: 10px;
+    color: #4e964e;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color:rgb(0, 23, 99);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #4cae4c;
+}
+
+.login-container p.message {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #a1a598;
+}
+a{
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form  action="RWH.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit"><a href="Home.html" style="text-decoration: none;color: white;">Login</a></button>
+            <p class="message">Not registered? <a href="new account.html">Create an account</a></p>
+        </form>
+    </div>
+</body>
+</html>

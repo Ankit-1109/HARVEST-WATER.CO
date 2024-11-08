@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right,rgb(127, 207, 223),rgb(11, 101, 134));
+    background-image:url(Rainwater_Harvesting_2_1024x1024.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header ul li{
+    margin: 4px 30px;
+
+}
+header {
+    background:linear-gradient(to right,rgb(127, 207, 223),rgb(11, 101, 134),rgb(127, 207, 223));
+    color: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Shop Section */
+.container-grid {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card h2 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.product-card .price {
+    color: #27ae60;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-card button {
+    background: #3498db;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.product-card button:hover {
+    background: #2980b9;
+}
+#cart-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #bdc3c7;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#cart-popup h2 {
+    margin-bottom: 10px;
+}
+
+#cart-popup button {
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    background:linear-gradient(to right,rgb(127, 207, 223),rgb(11, 101, 134),rgb(127, 207, 223));
+
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

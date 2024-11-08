@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainwater Harvesting Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HARVEST WATER.CO</h1>
+        <p>Preserve Water, Save the Planet</p>
+        <div class="cart-icon" onclick="toggleCart()">
+            <img src="cart.png" alt="Cart Icon">
+            <span id="cart-count">0</span>
+        </div>
+        <ul style="list-style:none;justify-content: center;display: flex;">
+            <li><a href="RWH.html" style="text-decoration: none;color:#fff;">HOME</a></li>
+            <li><a href="shop.html" style="text-decoration: none;color:#fff;">SHOP</a></li>
+            <li><a href="about.html" style="text-decoration: none;color:#fff">ABOUT</a></li>
+            <li><a href="methods.html" style="text-decoration: none;color: #fff;">Methods</a></li>
+            <li><a href="login.html" style="text-decoration: none;color:#fff;">LOGIN</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section class="about" style="text-align: center;">
+        <h2 style="color: #fff;margin-top:10px;">What is Rain Water Harvesting?</h2>
+        <div class="what">
+            <p>Rainwater harvesting is the process of collecting and storing rainwater for later use.
+
+                It involves capturing rainwater from rooftops, open grounds, or other surfaces and directing it into storage tanks or underground reservoirs. This collected water can then be used for various purposes, such as:</p><br>
+                <ul type="square">
+                    <li><b>1. Watering plants and gardens:</b> Rainwater is an excellent source of water for plants as it is free of chemicals and minerals that can harm them.</li>
+                    <img src="Document.jpg" alt="rain garden" height="300px" width="400px">
+                    <li><b>2. Flushing toilets:</b> Using rainwater for flushing toilets can significantly reduce the amount of potable water used in homes.</li> <img src="Cut_Section_Final_600x600.webp
+                        " alt="flushing" height="300px" width="400px">
+                    <li><b>3. Washing clothes:</b> Rainwater can be used for washing clothes, especially in areas with hard water.</li>
+                    <img src="clothes.jpeg" alt="clothes" height="300px" width="400px">
+                    <li><b>4. Cleaning purposes:</b> Rainwater can be used for cleaning floors, cars, and other surfaces.</li>
+                    <img src="Rainwater-Harvesting-How-does-it-work-1536x1280.webp" alt="rwh" height="
+                    300px" width="400px">
+                    <li><b>5. Recharging groundwater:</b> Rainwater can be infiltrated into the ground to recharge groundwater aquifers, helping to maintain water levels during dry periods.</li>
+                    <img src="Rain-Water-Harvesting-And-Artificial-Recharge-Of-Groundwater-7-2048.webp" alt="rwhs" height="300px" width="400px">
+                </ul>
+                <button onclick="Method.html"> SEE METHODS</button>
+        </div>
+
+    </section>
+
+    <section class="container-grid">
+        <h2 style="color: #fff;padding: 20px;">Rain Water Harvesting Kits</h2><br><br>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="shopping.webp" alt="Rainwater Tank">
+            <h3 style="color: #fff;">Rainwater Tank</h3>
+            <p style="color: #fff;">Capacity: 500L - Price: $250</p>
+            <button onclick="addToCart('Rainwater Tank')">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="shopping (1).webp" alt="Filter System">
+            <h3 style="color: #fff;">Filter System</h3>
+            <p style="color: #fff;">Advanced Filtration - Price: $150</p>
+            <button onclick="addToCart('Filter System')">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="shopping (2).webp" alt="Water Pump">
+            <h3 style="color: #fff;">Water Pump</h3>
+            <p style="color: #fff;">Efficient Pumping - Price: $120</p>
+            <button onclick="addToCart('Water Pump')">Add to Cart</button>
+        </div>
+    </section>
+
+    <div id="cart-popup">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>No items in cart.</p>
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rainwater Harvesting Shop | Preserve, Conserve, and Sustain</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
